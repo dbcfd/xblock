@@ -1,0 +1,7 @@
+[workspace]
+members = [
+  "network",
+  "coin_chain",
+  "contract_chain",
+  "app",
+]

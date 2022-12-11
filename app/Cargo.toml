@@ -1,0 +1,17 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+async-graphql = "5"
+async-graphql-actix-web = "5"
+actix-web = { version = "4.0.1", default-features = false, features = ["macros"] }
+coin_chain = { path = "../coin_chain" }
+contract_chain = { path = "../contract_chain" }
+clap = { version = "4", features = ["derive"] }
+network = { path = "../network" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
